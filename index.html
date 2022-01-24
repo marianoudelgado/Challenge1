@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge - Oracle || Alura</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <h1 class="titulo">Encriptador de Mensajes</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <h2 class="mensaje">Mensaje a Encriptar</h2>
+        <i class="fa fa-info-circle exepciones ">No se permiten caracteres espciales</i><label class="exepciones" for="textoEncriptar" id="mensajesEncript"></label>
+        <input class="text-input" type="text" name="textoEncriptar" id="textoEncriptar" pattern="[a-z]{1,15}" onkeyup="javascript:this.value=this.value.toLowerCase()" placeholder="Ingrese el texto aqui">
+        <input class="btn btn2" type="submit" value="Encriptar" id="btn-encriptar">
+        <input class="btn btn2" type="submit" value="Desencriptar" id="btn-desencriptar">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 class="mensaje">Mensaje Encriptado:</h2>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn btncopy" type="submit" value="Copiar" id="btn-copy" >
+    </section>
+  </main>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="desencriptar.js"></script>
+  <script src="encriptar.js"></script>
+  <script src="copiar.js" ></script>
+
+  <footer class="footer">Desarrollado por Mariano Uriel Delgado
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/Mariano.Uriel.Delgado/" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="https://twitter.com/MarianoUDelgado" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="https://www.linkedin.com/in/mariano-uriel-delgado/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/marianoudelgado" class="github"><i class="fa fa-github"></i></a>
+    </div>
+  </footer>
+  
+</body>
+</html>
